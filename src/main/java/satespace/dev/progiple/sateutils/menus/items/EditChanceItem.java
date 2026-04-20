@@ -55,7 +55,7 @@ public class EditChanceItem extends Item {
     @Override
     public Item onClick(InventoryClickEvent e) {
         this.chance = chance + rpcChance(e);
-        this.chance = Math.min(0, Math.max(chance, 100.0));
+        this.chance = Math.max(0, Math.min(chance, 100.0));
 
         updateLore();
         insert();
