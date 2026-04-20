@@ -1,5 +1,5 @@
 name: SateUtils
-version: '1.0'
+version: '1.0.2'
 main: satespace.dev.progiple.sateutils.SateUtils
 api-version: '1.16'
 depend: [LunaSpring]
