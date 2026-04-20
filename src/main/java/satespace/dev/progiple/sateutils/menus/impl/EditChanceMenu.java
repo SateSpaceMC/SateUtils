@@ -1,4 +1,4 @@
-package satespace.dev.progiple.sateutils.menus;
+package satespace.dev.progiple.sateutils.menus.impl;
 
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.entity.Player;
@@ -12,10 +12,7 @@ import org.novasparkle.lunaspring.API.configuration.Configuration;
 import org.novasparkle.lunaspring.API.menus.items.Item;
 import org.novasparkle.lunaspring.API.menus.items.NonMenuItem;
 import org.novasparkle.lunaspring.API.util.utilities.rarities.loot.Loot;
-import satespace.dev.progiple.sateutils.menus.items.EditChanceItem;
-
-import java.util.HashMap;
-import java.util.Map;
+import satespace.dev.progiple.sateutils.menus.items.impl.EditChanceItem;
 
 public class EditChanceMenu extends EditLootMenu {
     public EditChanceMenu(@NotNull Player player, String title, @Range(from = 9L, to = 54L) byte size, Configuration lootConfig) {

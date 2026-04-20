@@ -1,4 +1,4 @@
-package satespace.dev.progiple.sateutils.menus.items;
+package satespace.dev.progiple.sateutils.menus.items.impl;
 
 import lombok.Getter;
 import lombok.Setter;
