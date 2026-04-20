@@ -74,7 +74,7 @@ public class CodeItem<T> extends Item implements ICodeItem<T> {
             if (code.check(icm.getPicked())) {
                 icm.solve();
             }
-            else if (code.getLength() >= icm.getPicked().size()) {
+            else if (code.getLength() <= icm.getPicked().size()) {
                 icm.reset();
             }
             else {
