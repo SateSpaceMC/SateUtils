@@ -1,0 +1,6 @@
+name: SateUtils
+version: '${project.version}'
+main: satespace.dev.progiple.sateutils.SateUtils
+api-version: '1.16'
+depend: [LunaSpring]
+authors: [ProGiple]
