@@ -9,6 +9,7 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Range;
 import org.novasparkle.lunaspring.API.menus.items.Item;
 import org.novasparkle.lunaspring.API.menus.items.NonMenuItem;
+import org.novasparkle.lunaspring.API.util.utilities.LunaMath;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -55,7 +56,7 @@ public class EditChanceItem extends Item {
     @Override
     public Item onClick(InventoryClickEvent e) {
         this.chance = chance + rpcChance(e);
-        this.chance = Math.max(0, Math.min(chance, 100.0));
+        this.chance = LunaMath.round(Math.max(0, Math.min(chance, 100.0)), 1);
 
         updateLore();
         insert();
@@ -74,7 +75,7 @@ public class EditChanceItem extends Item {
             case CONTROL_DROP -> 0.1;
             case NUMBER_KEY -> {
                 int key = e.getHotbarButton();
-                yield Math.max(key, 0);
+                yield Math.max(key + 1, 0);
             }
             case MIDDLE -> 50;
             case SWAP_OFFHAND -> -50;
